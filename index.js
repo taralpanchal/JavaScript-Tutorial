@@ -1,19 +1,13 @@
-// Logical And(&&) Both operand True
-// console.log(true && true);
-// console.log(false && false);
+ //Read Write Execute
+ //000000100
+ //000000010
+ //000000001  
+ const readPermission = 4;
+ const writePermission = 2;
+ const executrPermission = 1;
 
-// let highIncome = true;
-// let googCreditScore = true;
-// let eligibleForLone = highIncome && googCreditScore;
-// console.log(eligibleForLone);
+ let myPermission = 0;
+ myPermission = myPermission | readPermission | writePermission;
 
-
-//Logical Or(||) If One operand True
-let highIncome = false;
-let googCreditScore = false;
-let eligibleForLone = highIncome || googCreditScore;
-console.log('Eligble',eligibleForLone);
-
-//Logical Not(!) 
-let applicationRefused = !eligibleForLone;
-console.log('Application Refused',applicationRefused);
+ let message = (myPermission & readPermission) ? 'yes' : 'no';
+ console.log(message);

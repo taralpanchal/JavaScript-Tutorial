@@ -1,3 +1,5 @@
-  const interestRate = 0.3;
-  interestRate = 1;
-  console.log(interestRate);
+ let name='Mosh'; //string
+ let age = 30; //Number
+ let isApprove = true; //Boolean
+ let firstName = undefined; //udefine
+ let selectedColor =  null;  //null

@@ -1,5 +1,4 @@
-function greet(name, lastName, age){
-    console.log('Hello ' + name + ' ' + lastName);
-    console.log(age);
+function squre(number){  
+    return number * number;
 }
-greet('Taral', 'Panchal', '21'); 
+console.log(squre(2)); 

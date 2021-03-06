@@ -1,5 +1,12 @@
- let name='Mosh'; //string
- let age = 30; //Number
- let isApprove = true; //Boolean
- let firstName = undefined; //udefine
- let selectedColor =  null;  //null
+let person={
+    name:'Taral',
+    age:21
+};
+//. dot notation
+person.name = 'Chirag';
+
+//Bracket Notation
+let selection = 'name';
+person[selection] = 'Mary';
+
+console.log(person.name);

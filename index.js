@@ -1,9 +1,7 @@
- let x= 10;
- let y= 2;
-
-console.log(x > 10); //gt
-console.log(x >= 10);  //gt equal
-console.log(x < 10);  // lt
-console.log(x <= 10);  //lt equal
-console.log(x === 10); // equal 
-console.log(x !== 10);   //not-equal
+//Strict Equality (Type + Value)
+console.log(10 === 10); 
+console.log(10 !== 10); 
+//Lose equality
+console.log(10 == 10); 
+console.log('10' !== 10); 
+console.log(true == 1);

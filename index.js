@@ -1,9 +1,17 @@
-const circle = {
-    radius:1
-};
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
 
-circle.color = 'yellow';
-circle.x = 5;
-delete circle.x;
-circle.draw = function(){}
+const Circle = new Function('radius',
+`this.radius = radius;
+this.draw = function(){
+    console.log('draw');
+}`);
+
+// Circle.call({}, 1);
+Circle.apply();
+const circle = new Circle(1);
 console.log(circle);

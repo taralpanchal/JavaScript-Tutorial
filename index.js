@@ -1,23 +1,20 @@
-//Divisibale by 3 => Fizz
-//Divisibale by 5 => Buzz
-// Divisibale by both 3 & 5 => FizzBuzz
-//Not Divisibale by 3 & 5 => input
-//Not A Number => 'Not Number
-const output = fizzBuzz('Mosh');
-console.log(output);
+//Speed Limit = 70
+// 5 -> 1 point
+//Math.floor(1.3)
+//more then 12 ponts -> Suspended
+checkSpeed(70);
 
-function fizzBuzz(input){
-    if(typeof input !==  'number')
-        return NaN;
+function checkSpeed(speed){
+    const speedLimit = 60;
+    const kmPerPoint = 5;
 
-    if(input % 3 === 0 && input % 5 ===  0)
-        return 'FizzBuzz';
-
-    else if(input % 5 ===  0)
-        return 'Buzz';
-
-    else if(input % 3 === 0)
-        return 'Fizz';
-     
-    return input;       
-}
+    if(speed < speedLimit + kmPerPoint)
+        console.log('Ok');
+    else{
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        if(points > 12)
+            console.log('License suspended');
+        else
+            console.log('Ponits',points);
+    }
+ }

@@ -1,12 +1,11 @@
-showPrimes(5);
+function createCircle(radius){
 
-function showPrimes(limit){
-    for(let i=2; i <=limit  ; i++)
-        if (isPrime(i)) console.log(i);
+    return{
+        radius,  
+        draw() {
+           console.log('SAM')
+        }
+    };
 }
-function isPrime(i){
-    for(let j=2; j < i  ; j++)
-        if(i % j === 0)
-            return false; 
-    return true;        
-}             
+const circle1 = createCircle(5);
+console.log(circle1);

@@ -1,9 +1,10 @@
-showNumbers(10);
-function showNumbers(limit){
-    for(let i=0 ; i<=limit ; i++){
-        if(i % 2 == 0)
-            console.log(i,'EVEN');
-        else   
-            console.log(i,'ODD'); 
-    }
+ const array = [0, null, undefined, '', 2, 3];
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+    let count = 0;
+    for(let value of array)
+    if (value)
+        count++;
+        return count; 
 }

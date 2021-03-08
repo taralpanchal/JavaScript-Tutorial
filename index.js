@@ -1,8 +1,9 @@
-function Circle(radius){
-    this.radius = radius;
-    this.draw = function(){
-        console.log('draw');
-    }
-}
-const circle = new Circle(3);
+const circle = {
+    radius:1
+};
+
+circle.color = 'yellow';
+circle.x = 5;
+delete circle.x;
+circle.draw = function(){}
 console.log(circle);

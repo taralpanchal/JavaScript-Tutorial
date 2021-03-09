@@ -1,12 +1,7 @@
-   //function declaration
-   function walk(){
-       console.log('walk');
-   } 
-
-   //Anonymous Function Experassion
-   let run = function(){
-        console.log('run');
-   };
-   let move = run;
-   run();
-   move();
+function sum(a,b){
+    let total = 0;
+    for(let value of arguments)
+     total += value;
+    return total;
+}
+console.log(sum(1,2,3,4,5,6,7,8,9));

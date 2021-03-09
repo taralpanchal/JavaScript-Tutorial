@@ -1,5 +1,4 @@
-function sum(discount,...prices){
-   const total = prices.reduce((a, b) => a + b);
-   return total * (1 - discount);
+function interest(principal,rate=3.5,year=4){
+    return principal * rate / 100 * year;
 }
-console.log(sum(0.1,20,30));  
+console.log(interest(15000));

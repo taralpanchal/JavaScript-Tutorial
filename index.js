@@ -1,8 +1,5 @@
-let first = [{ id: 1 }];
-let second = [5, 6, 7, 8];
-// const combined = first.concat(second);
- const combined = [...first,'a',...second,'b'];
-// const slice = combined.slice(0,3);
-const copy = [...combined];
-console.log(combined);
-console.log(copy); 
+let numbers= [1,2,3];
+for(let number of numbers)
+    console.log(number);
+
+const num = numbers.forEach((number, index) => console.log(index, number));

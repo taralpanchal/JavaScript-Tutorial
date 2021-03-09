@@ -1,14 +1,8 @@
-let number = [1, 2, 3, 4];
-let another = number;
+let first = [{ id: 1 }];
+let second = [5, 6, 7, 8];
+const combined = first.concat(second);
+first[0].id = 5;    
+const slice = combined.slice(0,3);
 
-
-
-// number = [];
-
-// number.length = 0;
-
-// number.splice(0,number.length);
-
-while(number.length > 0)
- number.pop();
-console.log(number);
+console.log(combined);
+console.log(slice); 

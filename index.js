@@ -1,15 +1,14 @@
-const number = [1, 2, 3, 4];
-//End
-const last = number.pop();
-console.log(number);
-console.log(last);
+let number = [1, 2, 3, 4];
+let another = number;
 
-//first
-const first = number.shift();
-console.log(number);
-console.log(first);
 
-//middle
-const middle = number.splice(2,1);
+
+// number = [];
+
+// number.length = 0;
+
+// number.splice(0,number.length);
+
+while(number.length > 0)
+ number.pop();
 console.log(number);
-console.log(middle);

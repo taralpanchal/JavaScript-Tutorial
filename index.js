@@ -1,9 +1,10 @@
-let priceRanges= [
-    {label: '$', tooltip:'Inexpensive', minPerPerson:0 , maxPerPerson:10},
-    {label: '$$', tooltip:'Moderate', minPerPerson:11 , maxPerPerson:20},
-    {label: '$$$', tooltip:'Expensive', minPerPerson:21 , maxPerPerson:50},
-];
+const number = [4, 5];
+// End
+number.push(6,7);
 
-let restaurants = [
-    {averaPerPerson: 5}
-]
+// Begginning
+number.unshift(1,2,3);
+
+//middle
+number.splice(3, 0, 'Taral');
+console.log(number);

@@ -1,22 +1,9 @@
-const blogPost = {
-    title : 'abc',
-    body : 'Blog Post',
-    author : 'AK',
-    views : 12,
-    comments : [
-        {author :'abc' , body : 'Bolg Post'},
-        {author :'asd' , body : 'Bolg'},
-    ],
-    isLive : true
- };
+let priceRanges= [
+    {label: '$', tooltip:'Inexpensive', minPerPerson:0 , maxPerPerson:10},
+    {label: '$$', tooltip:'Moderate', minPerPerson:11 , maxPerPerson:20},
+    {label: '$$$', tooltip:'Expensive', minPerPerson:21 , maxPerPerson:50},
+];
 
-function Post(title,body,author){
-    this.title = title;
-    this.body = body;
-    this.author = author;
-    this.views = 12;
-    this.comments = [];
-    this.isLive = false;
- }
- const post1 = new Post('abc','asd','aasd');
- console.log(post1);
+let restaurants = [
+    {averaPerPerson: 5}
+]

@@ -1,11 +1,15 @@
-const cources = [
-    { id: 1 , name : 'a' },
-    { id: 2 , name : 'b' },
-];
-console.log(cources.includes( {id:1 , name:'a'} ));
-const cource = cources.find(cource =>  cource.name === 'a' );
-  
-const cource1 = cources.find(function(cource){
-    return cource.name == 'a';
-});
-console.log(cource1)
+const number = [1, 2, 3, 4];
+//End
+const last = number.pop();
+console.log(number);
+console.log(last);
+
+//first
+const first = number.shift();
+console.log(number);
+console.log(first);
+
+//middle
+const middle = number.splice(2,1);
+console.log(number);
+console.log(middle);

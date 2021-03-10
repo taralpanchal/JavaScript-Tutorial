@@ -1,16 +1,10 @@
-const movies = [
-    { title : 'a', year: 2018, rating : 4.5 },
-    { title : 'b', year: 2018, rating : 4.7 }, 
-    { title : 'c', year: 2018, rating : 3 },
-    { title : 'd', year: 201, rating : 3.5 },
-];
-
-
-
-const titles =  movies
-    .filter(m => m.year === 2018 && m.rating >=4)
-    .short((a,b) => a.rating - b.rating)
-    .reverse()
-    .map(m => m.title)
-
-console.log(titles);
+ function sum(...items){
+    if (items.length === 1 && Array.isArray(items[0]))
+        items = [...items[0]];
+    return items.reduce((a,b) => a + b); 
+    // let total = 0;
+    //  for(let n of items)
+    //     total += n;
+    //  return total;
+ }
+ console.log(sum(1,2,3,4,5));

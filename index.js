@@ -1,12 +1,10 @@
-const numbers = [1,2,3,4,5];
+const number = arrayFromRange(1,5);
 
-const items = numbers.map((n,index) => {
-    return { index :   index,
-            id : n , 
-             name : 'apple',
-             price : 50,
-             color : 'red'
-    } ;    
-});
+console.log(number);
 
-console.log( "Apple", items); 
+function arrayFromRange(min,max){
+    const output= [];
+    for(let i=min; i<=max;i++)
+        output.push(i);
+    return output;    
+}

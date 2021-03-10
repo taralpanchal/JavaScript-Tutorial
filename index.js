@@ -1,16 +1,12 @@
 const number = [1, 2, 3, 4];
 
-const output = move(number, 2, 0);
-console.log(output);
+const count = countOccurrenece(number, 1);
+console.log(count);
 
-function move(array, index, offset){
-     const position = index + offset;
-     if(position >= array.length || position < 0){
-         console.error('Invalid offset');
-         return;
-     }
-     const output = [...array];
-     const element = output.splice(index, 1)[0];
-     output.splice(position, 0, element);
-     return output;
+function countOccurrenece(array, serachElement) {
+    return array.reduce((accumulator, current) => {
+    const occurrenece = (current === serachElement) ? 1 : 0; 
+        console.log(accumulator, current, serachElement);
+        return accumulator + occurrenece;
+    }, 0);
 }
